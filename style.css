@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.header a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #00c6ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #000, #222);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #00c6ff;
+}
+
+.hero .small {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c6ff;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 12%;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* About */
+.about-text {
+  max-width: 700px;
+}
+
+.facts li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 10px 20px;
+  margin: 6px;
+  border-radius: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00c6ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #009ec3;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
